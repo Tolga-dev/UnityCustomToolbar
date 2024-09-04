@@ -21,7 +21,7 @@ ProjectSettings
 Assets/AssetStoreTools*
 # Unity local user project setting
 UserSettings/
-
+Assets/unity-toolbar-extender-master
 # Visual Studio cache directory 
 .vs/
 
