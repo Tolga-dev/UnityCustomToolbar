@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace EditorProgramming.E1.Editor
+namespace EditorProgramming.E1
 {
     public class Player : MonoBehaviour
     {
