@@ -4,7 +4,6 @@ using System.Reflection;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 namespace EditorProgramming.E4.InitializeOnLoad
@@ -17,7 +16,6 @@ namespace EditorProgramming.E4.InitializeOnLoad
 		private static ScriptableObject _currentToolbar;
 
 		private static List<string> sceneList = new List<string>();
-		private const float borderThickness = 2f;
 		private static Rect rect;
 
 		static CreateButton()
