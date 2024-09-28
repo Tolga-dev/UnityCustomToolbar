@@ -320,7 +320,7 @@ GameObject:
   - component: {fileID: 1869240625}
   - component: {fileID: 1869240624}
   m_Layer: 0
-  m_Name: Hello
+  m_Name: EDITOR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -338,7 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3843f92a8f2a41c2a0a51fc3367145f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 22
+  health: 30
   stamina: -2.1
 --- !u!4 &1869240625
 Transform:
