@@ -2,7 +2,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 
-namespace EditorProgramming.E4.InitializeOnLoad
+namespace EditorProgramming.E5
 {
     [InitializeOnLoad]
     public static class CheckOnStation

@@ -6,7 +6,7 @@ using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace EditorProgramming.E4.InitializeOnLoad
+namespace EditorProgramming.E5
 {
 
 	[InitializeOnLoad]
@@ -28,7 +28,7 @@ namespace EditorProgramming.E4.InitializeOnLoad
 			EditorApplication.update += OnUpdate;
 		}
 
-		private static void OnUpdate()
+		private static void OnUpdate() // got help from customunitytoolbar in readme
 		{
 			if (_currentToolbar == null)
 			{
@@ -173,7 +173,7 @@ namespace EditorProgramming.E4.InitializeOnLoad
 		}
 	}
 
-	static class SceneHelper
+	static class SceneHelper // get help customunitytoolbar in readme
 	{
 		static string sceneToOpen;
 		private static bool canRun = false;
