@@ -1,28 +1,53 @@
-# PlayerEditor - Unity Editor Extension
+# Unity Custom Editor - Player Inspector
 
-## Overview
+This Unity project demonstrates how to create a custom editor for a `Player` object, allowing for enhanced control and visualization of various parameters and options in the Unity Editor.
 
-This Unity Editor extension provides a custom editor window that allows for:
-- Scrollable text fields with additional controls.
-- Dynamic horizontal layouts.
-- Interactive GUI elements such as buttons and labels.
-
-The project includes several features such as horizontal button layouts and scrollable text areas, with the ability to append and clear text dynamically.
+## Table of Contents
+- [Features](#features)
+- [Setup](#setup)
+- [Usage](#usage)
+- [Customization](#customization)
+- [License](#license)
 
 ## Features
 
-- **ScrollViewScope**: A scrollable area where text can be dynamically added or cleared.
-- **HorizontalScope**: Interactive horizontal button layout.
-- **Custom Editor Window**: Accessed from Unity's top menu bar.
+- **Custom Inspector**: Adds a detailed custom inspector interface for the `Player` class.
+- **Enum Support**: Provides support for custom enums (`MyEnum`) with flags and popup options.
+- **Animation Curve**: Allows visualization and control of animation curves within the inspector.
+- **Knob Control**: Includes a custom knob element for precise control over specific float values.
+- **Foldout Section**: Allows folding and unfolding specific sections for a cleaner UI.
+- **Pop-Up Menu**: Includes a popup selection for primitive GameObjects (Cube, Sphere, Plane) with creation buttons.
+- **Sliders, Toggles, and Fields**: Provides various input controls including sliders, toggles, text fields, delayed input fields, and more.
+- **Toolbar**: Offers a multi-button toolbar for quick selection and control.
 
-## Requirements
+## Setup
 
-- Unity 2021 or newer.
-- Familiarity with Unity's Editor scripting.
+1. Clone or download this repository.
+2. Open the project in Unity (Ensure you're using a version compatible with Unity Visual Scripting and Unity Editor tools).
+3. The custom editor script can be found under the path: `Assets/Scripts/Editor/PlayerEditor.cs`.
+4. Attach the `Player` script to a GameObject in the scene to see the custom editor in action.
 
-## How to Use
+## Usage
 
-1. Clone the repository or copy the source code into your Unity project.
-2. Open Unity and navigate to the top menu bar.
-3. Click on `Window` > `Test 2 Player Editor` to open the custom editor window.
-4. Inside the window, interact with the text area and buttons as described below:
+1. Select a GameObject with the `Player` component in the scene.
+2. You will see the custom inspector with various interactive elements:
+    - Adjust the player's health via the integer field.
+    - Use the dropdown menu to spawn primitive GameObjects.
+    - Adjust custom values using the knob or sliders.
+    - Experiment with different `MyEnum` flag and popup settings.
+
+### Custom Controls:
+
+- **Knob Control**: Allows you to set float values in a circular visual interface.
+- **Animation Curves**: Modify animation curves directly from the inspector.
+- **Toggle & Slider**: Switch between different options and control values using sliders and toggles.
+
+## Customization
+
+You can easily extend the editor functionality by adding new controls and custom logic to the `PlayerEditor.cs` script.
+
+To add new features:
+1. Open the `PlayerEditor.cs` script.
+2. Add or modify existing methods like `Knob()`, `PopUp()`, or `IntField()` to include new controls.
+3. Use Unity's built-in `EditorGUILayout` and `GUILayout` methods for additional input options.
+ 
